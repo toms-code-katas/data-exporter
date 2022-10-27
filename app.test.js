@@ -2,7 +2,7 @@ const fs = require('fs')
 const os = require('os');
 const path = require('path');
 
-const { extractTrace, getJobStatus } = require('./app');
+const { extractTrace, getJobStatus, processJob } = require('./app');
 
 var tmpDir
 
@@ -26,8 +26,15 @@ test('simple test with job json not containing a trace', () => {
   expect(getJobStatus(job_json)).toBe("failed");
 });
 
+test('simple test for writing a successful job to the correct directory', () => {
+  let job_raw = fs.readFileSync( "./job_with_trace_success.json" )
+  let job_json = JSON.parse(job_raw)
+  expect(processJob(job_json, tmpDir)).toBe(true);
+  // TODO: Add post-conditions like file exists here
+});
+
 afterAll(() => {
   console.debug("Deleting temporary folder " + tmpDir)
-  fs.rmdirSync(tmpDir)
+  fs.rmdirSync(tmpDir, { recursive: true, force: true })
   return true
 });
