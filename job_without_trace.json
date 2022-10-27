@@ -1,0 +1,95 @@
+{
+    "id": 3195652285,
+    "status": "success",
+    "stage": "build",
+    "name": "build-job",
+    "ref": "master",
+    "tag": false,
+    "coverage": null,
+    "allow_failure": false,
+    "created_at": "2022-10-19T10:55:33.664Z",
+    "started_at": "2022-10-19T10:55:34.178Z",
+    "finished_at": "2022-10-19T10:55:47.338Z",
+    "duration": 13.160801,
+    "queued_duration": 0.070785,
+    "user": {
+        "id": 491349,
+        "username": "tom1299",
+        "name": "tom1299",
+        "state": "active",
+        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/491349/avatar.png",
+        "web_url": "https://gitlab.com/tom1299",
+        "created_at": "2016-04-13T14:01:31.033Z",
+        "bio": "",
+        "location": "",
+        "public_email": "",
+        "skype": "",
+        "linkedin": "",
+        "twitter": "",
+        "website_url": "",
+        "organization": "",
+        "job_title": "",
+        "pronouns": null,
+        "bot": false,
+        "work_information": null,
+        "followers": 0,
+        "following": 0,
+        "local_time": null
+    },
+    "commit": {
+        "id": "94c2cd52377c0d471a4e6919075e6e58dc290d59",
+        "short_id": "94c2cd52",
+        "created_at": "2022-10-19T10:55:32.000+00:00",
+        "parent_ids": [
+            "66e7fa5c3f7f87eadd82d794c090b0f19782cc74"
+        ],
+        "title": "Remove wrong exit code",
+        "message": "Remove wrong exit code",
+        "author_name": "tom1299",
+        "author_email": "tom1299@gmx.de",
+        "authored_date": "2022-10-19T10:55:32.000+00:00",
+        "committer_name": "tom1299",
+        "committer_email": "tom1299@gmx.de",
+        "committed_date": "2022-10-19T10:55:32.000+00:00",
+        "trailers": {},
+        "web_url": "https://gitlab.com/jeeatwork/framework/-/commit/94c2cd52377c0d471a4e6919075e6e58dc290d59"
+    },
+    "pipeline": {
+        "id": 670926180,
+        "iid": 41,
+        "project_id": 38561683,
+        "sha": "94c2cd52377c0d471a4e6919075e6e58dc290d59",
+        "ref": "master",
+        "status": "running",
+        "source": "push",
+        "created_at": "2022-10-19T10:55:33.644Z",
+        "updated_at": "2022-10-19T10:55:34.377Z",
+        "web_url": "https://gitlab.com/jeeatwork/framework/-/pipelines/670926180"
+    },
+    "web_url": "https://gitlab.com/jeeatwork/framework/-/jobs/3195652285",
+    "project": {
+        "ci_job_token_scope_enabled": false
+    },
+    "artifacts": [
+        {
+            "file_type": "trace",
+            "size": 1949,
+            "filename": "job.log",
+            "file_format": null
+        }
+    ],
+    "runner": {
+        "id": 12270845,
+        "description": "1-green.shared.runners-manager.gitlab.com/default",
+        "ip_address": "34.74.78.47",
+        "active": true,
+        "paused": false,
+        "is_shared": true,
+        "runner_type": "instance_type",
+        "name": "gitlab-runner",
+        "online": true,
+        "status": "online"
+    },
+    "artifacts_expire_at": null,
+    "tag_list": []
+}

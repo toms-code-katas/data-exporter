@@ -1,0 +1,96 @@
+{
+    "id": 3195652285,
+    "status": "success",
+    "stage": "build",
+    "name": "build-job",
+    "ref": "master",
+    "tag": false,
+    "coverage": null,
+    "allow_failure": false,
+    "created_at": "2022-10-19T10:55:33.664Z",
+    "started_at": "2022-10-19T10:55:34.178Z",
+    "finished_at": "2022-10-19T10:55:47.338Z",
+    "duration": 13.160801,
+    "queued_duration": 0.070785,
+    "user": {
+        "id": 491349,
+        "username": "tom1299",
+        "name": "tom1299",
+        "state": "active",
+        "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/491349/avatar.png",
+        "web_url": "https://gitlab.com/tom1299",
+        "created_at": "2016-04-13T14:01:31.033Z",
+        "bio": "",
+        "location": "",
+        "public_email": "",
+        "skype": "",
+        "linkedin": "",
+        "twitter": "",
+        "website_url": "",
+        "organization": "",
+        "job_title": "",
+        "pronouns": null,
+        "bot": false,
+        "work_information": null,
+        "followers": 0,
+        "following": 0,
+        "local_time": null
+    },
+    "commit": {
+        "id": "94c2cd52377c0d471a4e6919075e6e58dc290d59",
+        "short_id": "94c2cd52",
+        "created_at": "2022-10-19T10:55:32.000+00:00",
+        "parent_ids": [
+            "66e7fa5c3f7f87eadd82d794c090b0f19782cc74"
+        ],
+        "title": "Remove wrong exit code",
+        "message": "Remove wrong exit code",
+        "author_name": "tom1299",
+        "author_email": "tom1299@gmx.de",
+        "authored_date": "2022-10-19T10:55:32.000+00:00",
+        "committer_name": "tom1299",
+        "committer_email": "tom1299@gmx.de",
+        "committed_date": "2022-10-19T10:55:32.000+00:00",
+        "trailers": {},
+        "web_url": "https://gitlab.com/jeeatwork/framework/-/commit/94c2cd52377c0d471a4e6919075e6e58dc290d59"
+    },
+    "pipeline": {
+        "id": 670926180,
+        "iid": 41,
+        "project_id": 38561683,
+        "sha": "94c2cd52377c0d471a4e6919075e6e58dc290d59",
+        "ref": "master",
+        "status": "running",
+        "source": "push",
+        "created_at": "2022-10-19T10:55:33.644Z",
+        "updated_at": "2022-10-19T10:55:34.377Z",
+        "web_url": "https://gitlab.com/jeeatwork/framework/-/pipelines/670926180"
+    },
+    "web_url": "https://gitlab.com/jeeatwork/framework/-/jobs/3195652285",
+    "project": {
+        "ci_job_token_scope_enabled": false
+    },
+    "artifacts": [
+        {
+            "file_type": "trace",
+            "size": 1949,
+            "filename": "job.log",
+            "file_format": null
+        }
+    ],
+    "runner": {
+        "id": 12270845,
+        "description": "1-green.shared.runners-manager.gitlab.com/default",
+        "ip_address": "34.74.78.47",
+        "active": true,
+        "paused": false,
+        "is_shared": true,
+        "runner_type": "instance_type",
+        "name": "gitlab-runner",
+        "online": true,
+        "status": "online"
+    },
+    "artifacts_expire_at": null,
+    "tag_list": [],
+    "trace": "\u001b[0KRunning with gitlab-runner 15.4.0~beta.5.gdefc7017 (defc7017)\u001b[0;m\n\u001b[0K  on green-1.shared.runners-manager.gitlab.com/default JLgUopmM\u001b[0;m\nsection_start:1666176934:prepare_executor\r\u001b[0K\u001b[0K\u001b[36;1mPreparing the \"docker+machine\" executor\u001b[0;m\u001b[0;m\n\u001b[0KUsing Docker executor with image ruby:2.5 ...\u001b[0;m\n\u001b[0KPulling docker image ruby:2.5 ...\u001b[0;m\n\u001b[0KUsing docker image sha256:27d049ce98db4e55ddfaec6cd98c7c9cfd195bc7e994493776959db33522383b for ruby:2.5 with digest ruby@sha256:ecc3e4f5da13d881a415c9692bb52d2b85b090f38f4ad99ae94f932b3598444b ...\u001b[0;m\nsection_end:1666176942:prepare_executor\r\u001b[0Ksection_start:1666176942:prepare_script\r\u001b[0K\u001b[0K\u001b[36;1mPreparing environment\u001b[0;m\u001b[0;m\nRunning on runner-jlguopmm-project-38561683-concurrent-0 via runner-jlguopmm-shared-1666176895-625c575c...\nsection_end:1666176942:prepare_script\r\u001b[0Ksection_start:1666176942:get_sources\r\u001b[0K\u001b[0K\u001b[36;1mGetting source from Git repository\u001b[0;m\u001b[0;m\n\u001b[32;1m$ eval \"$CI_PRE_CLONE_SCRIPT\"\u001b[0;m\n\u001b[32;1mFetching changes with git depth set to 20...\u001b[0;m\nInitialized empty Git repository in /builds/jeeatwork/framework/.git/\n\u001b[32;1mCreated fresh repository.\u001b[0;m\n\u001b[32;1mChecking out 94c2cd52 as master...\u001b[0;m\n\n\u001b[32;1mSkipping Git submodules setup\u001b[0;m\nsection_end:1666176944:get_sources\r\u001b[0Ksection_start:1666176944:step_script\r\u001b[0K\u001b[0K\u001b[36;1mExecuting \"step_script\" stage of the job script\u001b[0;m\u001b[0;m\n\u001b[0KUsing docker image sha256:27d049ce98db4e55ddfaec6cd98c7c9cfd195bc7e994493776959db33522383b for ruby:2.5 with digest ruby@sha256:ecc3e4f5da13d881a415c9692bb52d2b85b090f38f4ad99ae94f932b3598444b ...\u001b[0;m\n\u001b[32;1m$ echo \"Compiling the code...\"\u001b[0;m\nCompiling the code...\n\u001b[32;1m$ echo \"Compile complete.\"\u001b[0;m\nCompile complete.\nsection_end:1666176945:step_script\r\u001b[0Ksection_start:1666176945:cleanup_file_variables\r\u001b[0K\u001b[0K\u001b[36;1mCleaning up project directory and file based variables\u001b[0;m\u001b[0;m\nsection_end:1666176945:cleanup_file_variables\r\u001b[0K\u001b[32;1mJob succeeded\u001b[0;m\n"
+}
