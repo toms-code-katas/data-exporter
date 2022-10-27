@@ -4,8 +4,8 @@ function extractTrace(job_json) {
     return null
 }
 
-function didJobSucceed(job_json) {
-    return (job_json.status !== undefined && job_json.status == "success")
+function getJobStatus(job_json) {
+    return job_json.status
 }
 
-module.exports = { extractTrace, didJobSucceed };
+module.exports = { extractTrace, getJobStatus };
