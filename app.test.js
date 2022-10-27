@@ -1,11 +1,12 @@
 const fs = require('fs')
 
-const extractTrace = require('./app');
+const { extractTrace, didJobSucceed } = require('./app');
 
 test('simple test with job json containing a trace', () => {
   let job_raw = fs.readFileSync( "./job_with_trace.json" )
   let job_json = JSON.parse(job_raw)
   expect(extractTrace(job_json)).not.toBeNull();
+  expect(didJobSucceed(job_json)).toBe(true);
 });
 
 test('simple test with job json not containing a trace', () => {
