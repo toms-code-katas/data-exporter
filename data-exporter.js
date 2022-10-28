@@ -10,9 +10,15 @@ async function run() {
     const database = client.db('gitlab');
     const pipelines = database.collection('pipelines');
 
-    const pipeline = await pipelines.findOne({});
+    const all_jobs = await pipelines.find({}, {"jobs": 1, _id: 0});
 
-    console.log(pipeline);
+    await all_jobs.forEach((jobs) => {
+      if (jobs.jobs !== undefined) {
+        jobs.jobs.forEach((job) => {
+          console.debug(job.trace)
+        });
+      }
+    });
   }
   finally {
     await client.close();
