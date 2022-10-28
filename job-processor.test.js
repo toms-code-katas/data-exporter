@@ -2,7 +2,7 @@ const fs = require('fs')
 const os = require('os');
 const path = require('path');
 
-const { extractTrace, getJobStatus, processJob } = require('./app');
+const { extractTrace, getJobStatus, processJob } = require('./job-processor');
 
 var tmpDir
 

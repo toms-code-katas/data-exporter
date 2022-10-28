@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.2.2"
+  },
+  "dependencies": {
+    "mongodb": "4.11"
   }
 }
