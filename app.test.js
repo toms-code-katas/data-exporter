@@ -30,9 +30,13 @@ test('simple test with job json not containing a trace', () => {
 test('simple test for writing a successful job to the correct directory', () => {
   let job_raw = fs.readFileSync( "./job_with_trace_success.json" )
   let job_json = JSON.parse(job_raw)
+  let category_folder = tmpDir + "/" + job_json.status
+  let trace_file = category_folder + "/" + job_json.id
   expect(processJob(job_json, tmpDir)).toBe(true);
-  expect(fs.existsSync(tempFolder + "/" + "success"))
-  // TODO: Add post-conditions like file exists here
+  expect(fs.existsSync(category_folder)).toBeTruthy()
+  expect(fs.existsSync(trace_file)).toBeTruthy()
+  reread_trace = fs.readFileSync(trace_file).toString()
+  expect(reread_trace).toEqual(expect.stringContaining("Job succeeded"));
 });
 
 afterAll(() => {
