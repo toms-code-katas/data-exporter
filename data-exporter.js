@@ -24,6 +24,8 @@ async function run() {
         });
       }
     });
+
+    console.debug("Jobs stored at " + dataDir)
   }
   finally {
     await client.close();
